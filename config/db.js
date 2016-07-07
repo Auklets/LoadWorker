@@ -1,7 +1,7 @@
 const connection = {
   client: 'mysql',
   connection: {
-    host: process.env.DB_HOST,
+    host: `http://${process.env.DB_HOST}:${process.env.DB_PORT}`,
     database: process.env.APP_NAME,
     user: process.env.DB_USER,
     password: process.env.DB_PASSWORD,
