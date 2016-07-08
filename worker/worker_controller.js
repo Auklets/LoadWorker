@@ -1,6 +1,6 @@
 // Dependencies
 const request = require('request');
-const scenariorunner = require('./scripts/scenario');
+const scenariorunner = require('site-script');
 const helpers = require('./helper');
 const Promise = require('bluebird');
 
