@@ -1,7 +1,18 @@
+const connect = {
+  host: process.env.DB_HOST,
+  port: process.env.DB_PORT,
+  database: process.env.APP_NAME,
+  user: process.env.DB_USER,
+  password: process.env.DB_PASSWORD,
+  charset: 'utf8',
+};
+console.log('connect', connect);
+
 const connection = {
   client: 'mysql',
   connection: {
-    host: `http://${process.env.DB_HOST}:${process.env.DB_PORT}`,
+    host: process.env.DB_HOST,
+    port: process.env.DB_PORT,
     database: process.env.APP_NAME,
     user: process.env.DB_USER,
     password: process.env.DB_PASSWORD,
